@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 1. 
 ln -s /tmp rep_etc
 # 2.
