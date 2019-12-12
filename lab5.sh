@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1.
-for dir in $(ls -a $1)
+for dir in $(ls -a .)
 do
 	if [ -d $dir ]
 	then 
