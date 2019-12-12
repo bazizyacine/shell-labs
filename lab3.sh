@@ -11,3 +11,4 @@ find /etc -name *.conf -type f -print -ok cp {} test \; 2> /dev/null
 find ./ -type f \( -ok ls -l {} \; -or -ok cat {} \; \)
 # 5.
 find /usr/bin -perm -4000 -exec ls -l {} \;
+find /usr/bin -perm /u=s -exec ls -l {} \;
