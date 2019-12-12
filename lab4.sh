@@ -7,11 +7,7 @@ else
 	echo "$1 n'est pas un fichier en lecutre"
 fi
 # 2.
-if test -f $1 && test -r $1  
-	then echo "$1 est un fichier en lecture"
-else 
-	echo "$1 n'est pas un fichier en lecutre"
-fi
+test -f $1 && test -r $1 && echo "$1 est un fichier en lecture" || echo "$1 n'est pas un fichier en lecutre"
 # 3.
 #!/bin/bash
 
@@ -24,7 +20,7 @@ else
 
 	case "$ligne" in
 		*[a-zA-Z]* ) echo "$ligne" >> $1 ;;
-		*[0-9][^a-zA-Z] ) echo "$ligne" >> $2 ;;
+		*[0-9][^a-zA-Z]* ) echo "$ligne" >> $2 ;;
 		* ) 2>/dev/null ;;
 	esac
 fi
