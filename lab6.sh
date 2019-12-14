@@ -13,3 +13,11 @@ egrep '1{2}$|2{2}$' modele1
 grep '^[^D]' modele1
 # 7.
 grep -n '^35' modele1
+# 8.
+grep ':\*' test
+# 9.
+ls -laR | grep '^d'
+# 10.
+ps -A | grep 'bash'
+# 11.
+[ $(ps -A | grep -c 'bash') -eq 2 ] && (echo "reboot"; reboot) || echo "not found"
