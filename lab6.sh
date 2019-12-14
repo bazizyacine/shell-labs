@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 1.
 grep ^$LOGNAME /etc/passwd
 # 2.
